@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp play"
+    "start": "gulp play",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,8 @@
   "dependencies": {
     "angular2": "2.0.0-alpha.20",
     "es6-module-loader": "0.16.5",
-    "systemjs": "0.16.7"
-  }
+    "systemjs": "0.16.7",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
